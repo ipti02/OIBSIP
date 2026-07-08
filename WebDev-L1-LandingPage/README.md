@@ -1,42 +1,43 @@
-# 🚀 CodePilot AI - Landing Page
+#  CodePilot AI – Responsive Landing Page
 
-A modern, responsive landing page built using **HTML5** and **CSS3** for the **Oasis Infobyte Web Development Internship (Level 1 - Task 1)**.
+A modern and responsive landing page built using **HTML5** and **CSS3** as part of the **Oasis Infobyte Web Development & Designing Internship (Level 1 – Task 1)**.
+
+---
 
 ##  Project Overview
 
-CodePilot AI is a fictional AI-powered coding assistant designed to help developers write better code, debug faster, and improve productivity. This project demonstrates a clean, modern, and responsive landing page with an attractive user interface.
+**CodePilot AI** is a fictional AI-powered coding assistant designed to help developers write code faster, debug efficiently, and improve productivity. The landing page features a modern UI with a clean layout and fully responsive design.
 
 ---
 
-## Features
+##  Features
 
-* Responsive Navigation Bar
-* Hero Section with Call-to-Action Buttons
-* Features Section
-* About Section
-* Testimonials Section
-* Professional Footer
-* Modern Glassmorphism Design
-* Smooth Hover Animations
-* Responsive Layout for Desktop, Tablet, and Mobile
-* Clean HTML5 Semantic Structure
-* CSS Flexbox & Grid Layout
-
----
-
-## Technologies Used
-
-* HTML5
-* CSS3
-* Google Fonts (Poppins & Inter)
-* Remix Icons
+- Responsive Navigation Bar
+- Hero Section with Call-to-Action Buttons
+- Features Section
+- About Section
+- Testimonials Section
+- Footer with Social Links
+- Responsive Design for Desktop, Tablet & Mobile
+- Modern UI Design
+- Smooth Hover Effects
+- Clean & Semantic HTML Structure
 
 ---
 
-## Project Structure
+##  Technologies Used
 
-```
-CodePilot-AI/
+- HTML5
+- CSS3
+- Google Fonts
+- Remix Icons
+
+---
+
+##  Project Structure
+
+```text
+WebDev-L1-LandingPage/
 │
 ├── index.html
 ├── style.css
@@ -48,46 +49,51 @@ CodePilot-AI/
 
 ## Responsive Design
 
-The landing page is fully responsive and optimized for:
+This landing page is fully responsive and optimized for:
 
-* Desktop
-* Laptop
-* Tablet
-* Mobile Devices
-
----
-
-## Learning Objectives
-
-This project helped me practice:
-
-* Semantic HTML5
-* CSS Flexbox
-* CSS Grid
-* Responsive Web Design
-* UI Layout Design
-* Modern CSS Styling
-* Glassmorphism Effects
-* Hover Animations
+-  Desktop
+-  Laptop
+-  Tablet
+-  Mobile Devices
 
 ---
 
-## Preview
+## Learning Outcomes
 
-A clean and modern landing page for an AI-powered coding assistant.
+During this project, I practiced:
+
+- Semantic HTML5
+- CSS Flexbox
+- CSS Grid
+- Responsive Web Design
+- Modern UI Design
+- CSS Animations
+- Landing Page Development
+
+---
+
+## Live Demo
+
+🔗 **Live Website:** https://ipti02.github.io/OIBSIP/WebDev-L1-LandingPage/
+
+---
+
+## 📸 Preview
+
+A modern AI SaaS landing page featuring a responsive layout, clean interface, and engaging user experience.
 
 ---
 
 ## Author
 
-**Name:** ISRAT JAHAN
+**Israt Jahan**
 
-**Internship:** Oasis Infobyte Web Development & Designing Internship
+B.Sc. in Computer Science & Engineering
 
-**Task:** Level 1 - Task 1 (Landing Page)
+GitHub: https://github.com/ipti02
 
 ---
 
 ## License
 
-This project is created for educational and internship submission purposes only.
+This project was developed for educational purposes as part of the **Oasis Infobyte Web Development & Designing Internship (Level 1 – Task 1)**.
