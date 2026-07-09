@@ -3,93 +3,208 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Temperature Converter | Israt Jahan Ipti</title>
+  <title>Advanced Temperature Converter | Israt Jahan Ipti</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
   <div class="page-wrapper">
     <div class="converter-card">
 
-      <div class="header">
-        <h1>🌡 Temperature Converter</h1>
-        <p>Convert temperature values quickly between Celsius, Fahrenheit, and Kelvin.</p>
-      </div>
-
-      <div class="converter-form">
-        <div class="input-group">
-          <label for="temperature">Enter Temperature</label>
-          <input type="number" id="temperature" placeholder="e.g. 25" />
-        </div>
-
-        <div class="unit-row">
-          <div class="input-group">
-            <label for="fromUnit">From</label>
-            <select id="fromUnit">
-              <option value="celsius">Celsius (°C)</option>
-              <option value="fahrenheit">Fahrenheit (°F)</option>
-              <option value="kelvin">Kelvin (K)</option>
-            </select>
-          </div>
-
-          <button id="swapBtn" class="swap-btn" title="Swap Units">⇄</button>
-
-          <div class="input-group">
-            <label for="toUnit">To</label>
-            <select id="toUnit">
-              <option value="fahrenheit">Fahrenheit (°F)</option>
-              <option value="celsius">Celsius (°C)</option>
-              <option value="kelvin">Kelvin (K)</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="button-row">
-          <button id="convertBtn" class="convert-btn">Convert</button>
-          <button id="resetBtn" class="reset-btn">Reset</button>
-        </div>
-
-        <p id="errorMessage" class="error-message"></p>
-      </div>
-
-      <div class="result-box" id="resultBox">
-        <h2>Result</h2>
-        <p id="resultText">Your converted temperature will appear here.</p>
-      </div>
-
-      <div class="info-grid">
-        <div class="info-card">
-          <h3>📘 Common Formulas</h3>
-          <ul>
-            <li>°F = (°C × 9/5) + 32</li>
-            <li>°C = (°F − 32) × 5/9</li>
-            <li>K = °C + 273.15</li>
-            <li>°C = K − 273.15</li>
-          </ul>
-        </div>
-
-        <div class="info-card">
-          <h3>🧊 Absolute Zero</h3>
+      <div class="top-bar">
+        <div class="header">
+          <h1>🌡 Temperature Converter</h1>
           <p>
-            Temperature cannot go below absolute zero:
+            Convert temperatures instantly between Celsius, Fahrenheit, and Kelvin
+            with live results, smart insights, history, presets, and precision control.
           </p>
-          <ul>
-            <li>-273.15 °C</li>
-            <li>-459.67 °F</li>
-            <li>0 K</li>
-          </ul>
+        </div>
+
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+      </div>
+
+      <div class="main-layout">
+        <!-- LEFT SIDE -->
+        <div class="left-panel">
+          <div class="converter-form">
+
+            <div class="input-group">
+              <label for="temperature">Enter Temperature</label>
+              <input
+                type="number"
+                id="temperature"
+                placeholder="e.g. 25"
+                aria-label="Enter temperature value"
+              />
+            </div>
+
+            <div class="unit-row">
+              <div class="input-group">
+                <label for="fromUnit">From</label>
+                <select id="fromUnit" aria-label="Select source unit">
+                  <option value="celsius">Celsius (°C)</option>
+                  <option value="fahrenheit">Fahrenheit (°F)</option>
+                  <option value="kelvin">Kelvin (K)</option>
+                </select>
+              </div>
+
+              <button id="swapBtn" class="swap-btn" title="Swap Units" aria-label="Swap from and to units">⇄</button>
+
+              <div class="input-group">
+                <label for="toUnit">To</label>
+                <select id="toUnit" aria-label="Select target unit">
+                  <option value="fahrenheit">Fahrenheit (°F)</option>
+                  <option value="celsius">Celsius (°C)</option>
+                  <option value="kelvin">Kelvin (K)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="advanced-controls">
+              <div class="input-group">
+                <label for="conversionMode">Conversion Mode</label>
+                <select id="conversionMode" aria-label="Select conversion mode">
+                  <option value="single">Single Conversion</option>
+                  <option value="all">All Units</option>
+                </select>
+              </div>
+
+              <div class="input-group">
+                <label for="precisionSelect">Precision</label>
+                <select id="precisionSelect" aria-label="Select decimal precision">
+                  <option value="0">0 decimals</option>
+                  <option value="1">1 decimal</option>
+                  <option value="2" selected>2 decimals</option>
+                  <option value="3">3 decimals</option>
+                  <option value="4">4 decimals</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="button-row">
+              <button id="convertBtn" class="convert-btn">Convert</button>
+              <button id="copyBtn" class="copy-btn">Copy Result</button>
+              <button id="resetBtn" class="reset-btn">Reset</button>
+            </div>
+
+            <p id="errorMessage" class="error-message" aria-live="polite"></p>
+          </div>
+
+          <div class="preset-section">
+            <h3>⚡ Quick Presets</h3>
+            <div class="preset-buttons">
+              <button class="preset-btn" data-value="0" data-unit="celsius">0 °C</button>
+              <button class="preset-btn" data-value="25" data-unit="celsius">25 °C</button>
+              <button class="preset-btn" data-value="37" data-unit="celsius">37 °C</button>
+              <button class="preset-btn" data-value="100" data-unit="celsius">100 °C</button>
+              <button class="preset-btn" data-value="273.15" data-unit="kelvin">273.15 K</button>
+            </div>
+          </div>
+
+          <div class="thermo-section">
+            <div class="thermo-top">
+              <h3>🌡 Temperature Scale</h3>
+              <span id="thermoLabel" class="thermo-label">Waiting for input</span>
+            </div>
+
+            <div class="thermo-bar-wrap">
+              <div class="thermo-bar">
+                <div id="thermoFill" class="thermo-fill"></div>
+              </div>
+            </div>
+
+            <div class="thermo-range">
+              <span>-50°C</span>
+              <span>0°C</span>
+              <span>50°C</span>
+              <span>100°C+</span>
+            </div>
+          </div>
+
+          <div class="result-box" id="resultBox">
+            <div class="result-header">
+              <h2>Result</h2>
+              <div class="result-meta">
+                <span id="resultBadge" class="result-badge">Ready</span>
+                <span id="categoryBadge" class="category-badge neutral">--</span>
+              </div>
+            </div>
+            <p id="resultText">Your converted temperature will appear here.</p>
+          </div>
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="right-panel">
+          <div class="all-results-section">
+            <div class="section-head">
+              <h3>📊 All Unit Results</h3>
+            </div>
+
+            <div class="all-results-grid">
+              <div class="mini-result-card">
+                <h4>Celsius</h4>
+                <p id="celsiusResult">--</p>
+              </div>
+              <div class="mini-result-card">
+                <h4>Fahrenheit</h4>
+                <p id="fahrenheitResult">--</p>
+              </div>
+              <div class="mini-result-card">
+                <h4>Kelvin</h4>
+                <p id="kelvinResult">--</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="fact-box" id="factBox">
+            <h3>🧠 Temperature Insight</h3>
+            <p id="factText">Enter a value to see a related temperature fact or insight.</p>
+          </div>
+
+          <div class="info-grid">
+            <div class="info-card">
+              <h3>📘 Common Formulas</h3>
+              <ul>
+                <li>°F = (°C × 9/5) + 32</li>
+                <li>°C = (°F − 32) × 5/9</li>
+                <li>K = °C + 273.15</li>
+                <li>°C = K − 273.15</li>
+              </ul>
+            </div>
+
+            <div class="info-card">
+              <h3>🧊 Absolute Zero</h3>
+              <p>Temperature cannot go below absolute zero:</p>
+              <ul>
+                <li>-273.15 °C</li>
+                <li>-459.67 °F</li>
+                <li>0 K</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="history-section">
+            <div class="history-top">
+              <h3>🕘 Recent Conversions</h3>
+              <div class="history-actions">
+                <button id="exportHistoryBtn" class="history-action-btn">Export History</button>
+                <button id="clearHistoryBtn" class="clear-history-btn">Clear History</button>
+              </div>
+            </div>
+
+            <ul id="historyList">
+              <li>No conversions yet.</li>
+            </ul>
+
+            <p class="history-note">
+              Tip: Click a history item to reuse it. Use the × button to delete a single item.
+            </p>
+          </div>
         </div>
       </div>
-
-      <div class="history-section">
-        <h3>🕘 Recent Conversions</h3>
-        <ul id="historyList">
-          <li>No conversions yet.</li>
-        </ul>
-      </div>
-
     </div>
   </div>
+
+  <div id="toast" class="toast">Copied!</div>
 
   <script src="script.js"></script>
 </body>

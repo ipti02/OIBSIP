@@ -1,78 +1,144 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>OIBSIP Projects</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advanced Temperature Converter | Israt Jahan Ipti</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-<div class="container">
+  <div class="page-wrapper">
+    <div class="converter-card">
 
-<h1>Oasis Infobyte Internship Projects</h1>
+      <div class="top-bar">
+        <div class="header">
+          <h1>🌡 Temperature Converter</h1>
+          <p>
+            Convert temperature values instantly between Celsius, Fahrenheit, and Kelvin
+            with smart insights, history, and all-unit results.
+          </p>
+        </div>
 
-<p>
-Level 1 Web Development & Designing Internship
-</p>
+        <button id="themeToggle" class="theme-toggle">🌙</button>
+      </div>
 
-<div class="cards">
+      <div class="converter-form">
+        <div class="input-group">
+          <label for="temperature">Enter Temperature</label>
+          <input type="number" id="temperature" placeholder="e.g. 25" />
+        </div>
 
-<a href="WebDev-L1-LandingPage/" class="card">
+        <div class="unit-row">
+          <div class="input-group">
+            <label for="fromUnit">From</label>
+            <select id="fromUnit">
+              <option value="celsius">Celsius (°C)</option>
+              <option value="fahrenheit">Fahrenheit (°F)</option>
+              <option value="kelvin">Kelvin (K)</option>
+            </select>
+          </div>
 
-<h2>🚀 Landing Page</h2>
+          <button id="swapBtn" class="swap-btn" title="Swap Units">⇄</button>
 
-<p>
-Responsive AI SaaS Landing Page built with HTML & CSS.
-</p>
+          <div class="input-group">
+            <label for="toUnit">To</label>
+            <select id="toUnit">
+              <option value="fahrenheit">Fahrenheit (°F)</option>
+              <option value="celsius">Celsius (°C)</option>
+              <option value="kelvin">Kelvin (K)</option>
+            </select>
+          </div>
+        </div>
 
-<span>View Project →</span>
+        <div class="button-row">
+          <button id="convertBtn" class="convert-btn">Convert</button>
+          <button id="copyBtn" class="copy-btn">Copy Result</button>
+          <button id="resetBtn" class="reset-btn">Reset</button>
+        </div>
 
-</a>
+        <p id="errorMessage" class="error-message"></p>
+      </div>
 
-<a href="WebDev-L1-PersonalPortfolio/" class="card">
+      <div class="preset-section">
+        <h3>⚡ Quick Presets</h3>
+        <div class="preset-buttons">
+          <button class="preset-btn" data-value="0" data-unit="celsius">0 °C</button>
+          <button class="preset-btn" data-value="25" data-unit="celsius">25 °C</button>
+          <button class="preset-btn" data-value="37" data-unit="celsius">37 °C</button>
+          <button class="preset-btn" data-value="100" data-unit="celsius">100 °C</button>
+          <button class="preset-btn" data-value="273.15" data-unit="kelvin">273.15 K</button>
+        </div>
+      </div>
 
-<h2>👨‍💻 Personal Portfolio</h2>
+      <div class="result-box" id="resultBox">
+        <div class="result-header">
+          <h2>Result</h2>
+          <span id="resultBadge" class="result-badge">Ready</span>
+        </div>
+        <p id="resultText">Your converted temperature will appear here.</p>
+      </div>
 
-<p>
-Personal portfolio website showcasing skills and projects.
-</p>
+      <div class="all-results-section">
+        <h3>📊 All Unit Results</h3>
+        <div class="all-results-grid">
+          <div class="mini-result-card">
+            <h4>Celsius</h4>
+            <p id="celsiusResult">--</p>
+          </div>
+          <div class="mini-result-card">
+            <h4>Fahrenheit</h4>
+            <p id="fahrenheitResult">--</p>
+          </div>
+          <div class="mini-result-card">
+            <h4>Kelvin</h4>
+            <p id="kelvinResult">--</p>
+          </div>
+        </div>
+      </div>
 
-<span>View Project →</span>
+      <div class="fact-box" id="factBox">
+        <h3>🧠 Temperature Insight</h3>
+        <p id="factText">Enter a value to see a related temperature fact or insight.</p>
+      </div>
 
-</a>
+      <div class="info-grid">
+        <div class="info-card">
+          <h3>📘 Common Formulas</h3>
+          <ul>
+            <li>°F = (°C × 9/5) + 32</li>
+            <li>°C = (°F − 32) × 5/9</li>
+            <li>K = °C + 273.15</li>
+            <li>°C = K − 273.15</li>
+          </ul>
+        </div>
 
-<a href="WebDev-L1-TemperatureConverter/" class="card">
+        <div class="info-card">
+          <h3>🧊 Absolute Zero</h3>
+          <p>Temperature cannot go below absolute zero:</p>
+          <ul>
+            <li>-273.15 °C</li>
+            <li>-459.67 °F</li>
+            <li>0 K</li>
+          </ul>
+        </div>
+      </div>
 
-<h2>🌡 Temperature Converter</h2>
+      <div class="history-section">
+        <div class="history-top">
+          <h3>🕘 Recent Conversions</h3>
+          <button id="clearHistoryBtn" class="clear-history-btn">Clear History</button>
+        </div>
+        <ul id="historyList">
+          <li>No conversions yet.</li>
+        </ul>
+      </div>
 
-<p>
-Temperature converter using HTML, CSS and JavaScript.
-</p>
+    </div>
+  </div>
 
-<span>View Project →</span>
+  <div id="toast" class="toast">Copied!</div>
 
-</a>
-
-</div>
-
-</div>
-
+  <script src="script.js"></script>
 </body>
-
 </html>
-
