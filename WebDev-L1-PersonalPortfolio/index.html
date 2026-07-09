@@ -1,14 +1,1045 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Project Title</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Israt Jahan Ipti Chy Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="scripts.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Dancing Script' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
+
 <body>
+  <!-- Splash Screen Section -->
+  <section id="splash-screen">
+    <div class="splash-content">
 
-  <h1>Hello Project</h1>
+      <h1 class="splash-title">🚀 Welcome to My Digital Portfolio</h1>
 
+      <img src="images/ipti10.jpg" alt="Israt Jahan" class="splash-photo">
+
+      <h2 class="splash-name">Israt Jahan Ipti Chy</h2>
+      <p class="splash-role">Computer Science Graduate</p>
+
+      <p class="splash-details">
+        <b>A personal portfolio showcasing my journey, skills, and projects</b>
+      </p>
+
+      <a href="#home" id="explore-btn" class="explore-btn">
+        <span>✨ Explore More ✨</span>
+        <i class="fas fa-arrow-down"></i>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- =========================
+     Main Portfolio Content
+     ========================= -->
+  <div id="main-content">
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="images/ipti10.jpg" alt="Logo" class="logo-img" />
+          <span style="color: beige; font-family: Georgia, 'Times New Roman', Times, serif;">
+            Israt Jahan Ipti Chy
+          </span>
+        </div>
+
+        <!-- Hamburger Menu -->
+        <div id="menu-toggle" class="menu-toggle">&#9776;</div>
+
+        <!-- Navigation Links -->
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#research">Research Work</a></li>
+          <li><a href="#certifications-awards">Certificates & Awards</a></li>
+          <li><a href="#moments">Moments</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li class="close-btn" id="close-btn">&times;</li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+
+  <!-- =========================
+     About Me Section
+     ========================= -->
+<section class="about-section" id="home">
+  <div class="about-container">
+    <div class="about-text">
+
+      <h3 class="name-highlight">Hello, I am <span class="name-highlight">Israt Jahan Ipti Chy</span></h3>
+
+      <p>
+        I am a Computer Science and Engineering graduate with a strong interest in
+        <strong>software development, web technologies, problem-solving, and research</strong>.
+      </p>
+
+      <p>
+        I have worked on multiple academic and practical projects in web development, programming, and databases,
+        while also gaining research experience through my thesis work.
+      </p>
+
+      <p>
+        I have also been actively involved in <strong>club activities, IT volunteering, and teamwork</strong>,
+        and I am a dedicated and disciplined person who takes work seriously and values continuous learning.
+      </p>
+
+    </div>
+  </div>
+</section>
+
+  <!-- Social Media Buttons -->
+  <div class="social-links">
+    <a href="https://github.com/ipti02" target="_blank" class="social-btn github"><i class="fab fa-github"></i></a>
+    <a href="https://www.researchgate.net/" target="_blank" class="social-btn researchgate"><i
+        class="fab fa-researchgate"></i></a>
+    <a href="https://scholar.google.com/?authuser=0" target="_blank" class="social-btn scholar"><i
+        class="fas fa-graduation-cap"></i></a>
+    <a href="https://www.linkedin.com/in/israt-jahan-ipti-0817bb267" target="_blank" class="social-btn linkedin"><i
+        class="fab fa-linkedin-in"></i></a>
+    <!-- Gmail -->
+    <a href="mailto:isratjahan6463@gmail.com" class="social-btn email">
+      <i class="fas fa-envelope"></i>
+    </a>
+  </div>
+
+  <!-- Action Buttons -->
+  <div class="action-buttons">
+
+    <a href="#research" class="primary-button">
+      <i class="fa-solid fa-book"></i> View My Research
+    </a>
+
+    <a href="files/Israt_Jahan_Ipti_CV.pdf" target="_blank" class="secondary-button">
+      <i class="fa-solid fa-eye"></i> View CV
+    </a>
+
+  </div>
+
+  <!-- =========================
+     Skills
+     ========================= -->
+  <section id="skills" class="skills-section">
+    <h2>Skills</h2>
+
+    <div class="skills-container">
+
+      <!-- Programming -->
+      <div class="skill-card">
+        <h3>💻 Programming</h3>
+        <p>C, C++, Python</p>
+      </div>
+
+      <!-- Web Development -->
+      <div class="skill-card">
+        <h3>🌐 Web Development</h3>
+        <p>Django, HTML, CSS, JavaScript, PHP, XAMPP</p>
+      </div>
+
+      <!-- AI / ML -->
+      <div class="skill-card">
+        <h3>🤖 AI / Machine Learning</h3>
+        <p>Machine Learning, NLP (Research Interest), Data Preprocessing</p>
+      </div>
+
+      <!-- Tools -->
+      <div class="skill-card">
+        <h3>🛠 Tools</h3>
+        <p>Git, GitHub, VS Code, Google Colab, Ubuntu, Kali Linux</p>
+      </div>
+
+      <!-- Competitive Programming -->
+      <div class="skill-card">
+        <h3>🏆 Competitive Programming</h3>
+        <p>
+          <a href="https://codeforces.com/profile/Ipti02" target="_blank">
+            Codeforces Profile (Rating: 743 – Newbie)
+          </a>
+        </p>
+      </div>
+
+      <!-- Soft Skills -->
+      <div class="skill-card">
+        <h3>🧠 Soft Skills</h3>
+        <p>Problem Solving, Teamwork, Event Management</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================
+     Dancing text
+     ========================= -->
+  <div class="dancing-text" aria-live="polite">
+    <span id="dancing-text">💡 Dedicated Learner | Problem Solver | Team Player</span>
+  </div>
+
+  <!-- =========================
+     About Me 
+     ========================= -->
+  <section id="about" class="hero">
+    <div class="hero-text">
+
+      <p>
+        I am a graduate in Computer Science and Engineering with practical experience in
+        <strong>Full-Stack Web Development</strong> and <strong>Problem Solving</strong>.
+      </p>
+
+      <p>
+        I have developed and implemented multiple projects using
+        <strong>Python (Django), JavaScript, HTML, CSS, and MySQL</strong>.
+      </p>
+
+      <p>
+        As part of a <strong>150-hour industrial training program</strong> at the
+        <strong>CUET IT Business Incubator</strong> in collaboration with
+        <strong>Diligite Ltd.</strong>, I worked on real web applications
+        and gained practical experience in software development.
+      </p>
+
+      <p>
+        My thesis focused on <strong>Natural Language Processing (NLP)</strong>,
+        especially multilingual text summarization.
+      </p>
+
+      <p>
+        I am motivated to further develop my skills and gain practical experience through an
+        <strong>IT Ausbildung in Germany</strong>.
+      </p>
+
+    </div>
+
+    <div class="hero-img">
+      <img src="images/ipti3.png" alt="Israt Jahan">
+    </div>
+  </section>
+
+  <div class="hero-buttons">
+    <a href="#contact" class="btn">Contact</a>
+    <a href="#projects" class="btn-outline">View Projects</a>
+  </div>
+
+  <!-- Education -->
+  <section id="education">
+    <h2>Education</h2>
+
+    <div class="edu-item">
+      <h3>Bachelor of Science in Computer Science & Engineering</h3>
+      <p>International Islamic University Chittagong</p>
+      <span>June 2021 – 2025</span>
+    </div>
+
+    <div class="edu-item">
+      <h3>Higher Secondary Certificate (HSC)</h3>
+      <p>Sitakund Govt. Mohila College</p>
+      <span>2017 – 2020</span>
+    </div>
+
+    <div class="edu-item">
+      <h3>Secondary School Certificate (SSC)</h3>
+      <p>Sitakund Girls High School</p>
+      <span>2016 – 2017</span>
+    </div>
+
+  </section>
+
+  <!-- =========================
+     Experience Section 
+     ========================= -->
+  <section id="experience">
+    <h2>Experience</h2>
+
+    <!-- PROFESSIONAL EXPERIENCE -->
+    <div class="exp-category-wrap">
+      <div class="exp-category-box">
+        <h3 class="exp-category">Professional Experience</h3>
+        <button class="exp-toggle-btn" aria-expanded="false">Show More</button>
+      </div>
+
+      <div class="experience-scroll collapsed" data-category="industrial">
+        <article class="experience-card">
+          <img src="images/digilite.jpg" alt="Industrial Training">
+          <div class="exp-content">
+            <h3>Industrial Training 2025 | ITBI–Diligite</h3>
+            <h4>Chittagong University of Engineering & Technology (CUET)</h4>
+            <p>
+              Completed intensive training in <strong>HTML, CSS, JavaScript, PHP, Laravel, Bootstrap, and Frontend &
+                Backend Development</strong>.
+              Built multiple full-stack web applications with a focus on clean UI and efficient backend logic.
+            </p>
+            <ul class="tech-list">
+              <li>HTML, CSS</li>
+              <li>Bootstrap</li>
+              <li>JavaScript (ES6+)</li>
+              <li>PHP, Laravel</li>
+              <li>MySQL</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- ACADEMIC ACTIVITIES -->
+    <div class="exp-category-wrap">
+      <div class="exp-category-box">
+        <h3 class="exp-category">Academic Activities</h3>
+        <button class="exp-toggle-btn" aria-expanded="false">Show More</button>
+      </div>
+
+      <div class="experience-scroll collapsed" data-category="cocurricular">
+        <article class="experience-card">
+          <img src="images/cciiuc.jpg" alt="Programming Contest">
+          <div class="exp-content">
+            <h3>Assistant Programming Contest Secretary</h3>
+            <h4>IIUC Computer Club (2023 - 2024)</h4>
+            <p>Organized programming contests, supported training sessions, and contributed to member development.</p>
+          </div>
+        </article>
+
+        <article class="experience-card">
+          <img src="images/hultiiuc.png" alt="IT Department">
+          <div class="exp-content">
+            <h3>IT Department Associate</h3>
+            <h4>Hult Prize at IIUC Organisation (2023 - 2024)</h4>
+            <p>Managed IT infrastructure, provided technical support, and solved issues to improve efficiency.</p>
+          </div>
+        </article>
+
+        <article class="experience-card">
+          <img src="images/ieeeiiuc.jpg" alt="Treasurer">
+          <div class="exp-content">
+            <h3>Treasurer</h3>
+            <h4>IEEE Robotics and Automation Society IIUC (2024 - 2025)</h4>
+            <p>Managed budget and resources while supporting workshops and competitions.</p>
+          </div>
+        </article>
+
+        <article class="experience-card">
+          <img src="images/ieeeiiuccs.jpg" alt="Newsletter">
+          <div class="exp-content">
+            <h3>Newsletter Sub-Editor</h3>
+            <h4>IEEE Computer Society IIUC (2024 - 2025)</h4>
+            <p>Created and edited newsletters to improve content quality and reach.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- EXTRA -->
+    <div class="exp-category-wrap">
+      <div class="exp-category-box">
+        <h3 class="exp-category">Extracurricular Activities</h3>
+        <button class="exp-toggle-btn" aria-expanded="false">Show More</button>
+      </div>
+
+      <div class="experience-scroll collapsed" data-category="extracurricular">
+        <article class="experience-card">
+          <img src="images/divisional.png" alt="Olympiad">
+          <div class="exp-content">
+            <h3>Volunteer</h3>
+            <h4>Divisional Science Olympiad</h4>
+            <p>Supported organization, logistics, and participant coordination.</p>
+          </div>
+        </article>
+
+        <article class="experience-card">
+          <img src="images/youth.jpg" alt="Youth Voice">
+          <div class="exp-content">
+            <h3>Volunteer</h3>
+            <h4>Youth’s Voice</h4>
+            <p>Participated in social initiatives, programs, and events.</p>
+          </div>
+        </article>
+
+        <article class="experience-card">
+          <img src="images/nsu.jpeg" alt="Ambassador">
+          <div class="exp-content">
+            <h3>Campus Ambassador</h3>
+            <h4>SPAC’23, IEEE NSU Student Branch</h4>
+            <p>Represented the university and built networks with other students.</p>
+          </div>
+        </article>
+
+        <article class="experience-card">
+          <img src="images/sccg.jpg" alt="SCCG">
+          <div class="exp-content">
+            <h3>Campus Ambassador</h3>
+            <h4>SCCG (Study and Career Coach Germany)</h4>
+            <p>Promoted programs and actively communicated with students.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =========================
+     Projects Section
+     ========================= -->
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <!-- Swiper Container -->
+    <div class="swiper project-slider">
+      <div class="swiper-wrapper">
+
+        <!-- Project 1 -->
+        <div class="swiper-slide">
+          <div class="project-card">
+            <div class="project-img">
+              <img src="images/IIUC_student_bus.jpg" alt="IIUC Transport Management System">
+            </div>
+            <div class="project-content">
+              <h3>IIUC Transport Management System</h3>
+              <p>
+                A complete web-based transport management system that allows students and administrators
+                to manage <strong>routes, bus schedules, registrations, and user profiles</strong>.
+              </p>
+              <ul class="tech-list">
+                <li>Python (Django)</li>
+                <li>HTML, CSS, Bootstrap</li>
+                <li>JavaScript</li>
+                <li>SQLite</li>
+              </ul>
+              <div class="project-footer">
+                <a href="https://github.com/ipti02/Python_Django_Transport_Management_Project#" target="_blank"
+                  class="project-btn">
+                  🔗 View on GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="swiper-slide">
+          <div class="project-card">
+            <div class="project-img">
+              <img src="images/eail.png" alt="Email Templates Project">
+            </div>
+            <div class="project-content">
+              <h3>Email Templates Collection</h3>
+              <p>
+                A collection of <strong>responsive HTML & CSS email templates</strong> designed
+                for professional newsletters, marketing campaigns, and notifications.
+                Optimized for different devices and email clients.
+              </p>
+              <ul class="tech-list">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Responsive Layouts</li>
+                <li>Cross-browser Compatibility</li>
+              </ul>
+              <div class="project-footer">
+                <a href="https://github.com/ipti02/Email-templates.git" target="_blank" class="project-btn">
+                  🔗 View on GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="swiper-slide">
+          <div class="project-card">
+            <div class="project-img">
+              <img src="images/os.png" alt="Operating System Project Report">
+            </div>
+            <div class="project-content">
+              <h3>Operating System Project: Implementing a File System in Python</h3>
+              <p>
+                This project, developed as part of the <strong>Operating System Lab (CSE-3632)</strong>,
+                demonstrates a <strong>custom file system implemented in Python</strong>.
+                It supports operations such as <em>creating, reading, writing, deleting, and listing files</em>.
+              </p>
+              <ul class="tech-list">
+                <li>Python 3</li>
+                <li>File Handling</li>
+                <li>OOP (Classes & Methods)</li>
+                <li>Operating System Concepts</li>
+              </ul>
+              <div class="project-footer">
+                <a href="https://github.com/ipti02/file_implementation_project.git" target="_blank" class="project-btn">
+                  🔗 View on GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="swiper-slide">
+          <div class="project-card">
+            <div class="project-img">
+              <img src="images/nm.png" alt="Numerical Calculator GUI screenshot">
+            </div>
+
+            <div class="project-content">
+              <h3>Numerical Method Project: Numerical Calculator — GUI (Python)</h3>
+
+              <p>
+                A <strong>Graphical User Interface (GUI)</strong> based Numerical Calculator built in
+                <strong>Python</strong>.
+                It implements fundamental <strong>Numerical Analysis methods</strong> with an attractive and modern
+                interface:
+                root finding (Bisection, Newton-Raphson, Secant), numerical differentiation & integration,
+                matrix solvers (Gauss Elimination, Gauss-Seidel), interpolation, regression, and more.
+                Clean modern UI with on-screen keyboard and smooth navigation.
+              </p>
+
+              <ul class="tech-list">
+                <li>Python 3.8+</li>
+                <li>Tkinter (GUI)</li>
+                <li>NumPy</li>
+                <li>Numerical Methods (Bisection, Newton, Simpson, Gauss, etc.)</li>
+              </ul>
+
+              <div class="project-footer" style="margin-top:12px;">
+                <a href="https://github.com/ipti02/Numerical_Calculator_using_numerical_method.git" target="_blank"
+                  class="project-btn">
+                  🔗 View on GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="swiper-slide">
+          <div class="project-card">
+            <div class="project-img">
+              <img src="images/dbms.png" alt="Digital Wallet Management System Project Report">
+            </div>
+            <div class="project-content">
+              <h3>Database Project: Digital Wallet Management System</h3>
+              <p>
+                This project, created for the <strong>Database Management System Lab (CSE-2424)</strong>,
+                focuses on designing and implementing a <strong>Digital Wallet Management System</strong>.
+                It enables <em>secure wallet management, transactions, and database operations</em>
+                using structured queries and PL/SQL.
+              </p>
+              <ul class="tech-list">
+                <li>MySQL / Oracle SQL</li>
+                <li>DDL & DML Queries</li>
+                <li>ER Model & Schema Design</li>
+                <li>PL/SQL (Procedures & Cursors)</li>
+              </ul>
+              <div class="project-footer">
+                <a href="https://github.com/ipti02/Database-Management-System-project_sql.git" target="_blank"
+                  class="project-btn">
+                  🔗 View on GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Swiper Controls -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- See More Button -->
+    <div class="project-toggle-wrap" style="text-align:center; margin-top: 20px;">
+      <button id="projectToggleBtn" class="project-toggle-btn">See More</button>
+    </div>
+  </section>
+
+  <!-- =========================
+     Research Work Section
+     ========================= -->
+  <section id="research">
+    <h2>Research Work</h2>
+
+    <!-- Filter Buttons -->
+    <div class="research-filter">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="thesis">Thesis</button>
+      <button class="filter-btn" data-filter="conference">Conference Papers</button>
+      <button class="filter-btn" data-filter="journal">Journal Articles</button>
+      <button class="filter-btn" data-filter="submitted">Submitted Papers</button>
+    </div>
+
+    <!-- Research Timeline -->
+    <div class="research-timeline" id="research-list">
+
+      <!-- Thesis Item -->
+      <div class="research-item" data-category="thesis">
+        <div class="research-year">2025</div>
+        <div class="research-details">
+          <h3>Multilingual Text Summarization Using NLP</h3>
+          <span class="research-meta">Thesis</span>
+
+          <p>
+            Worked with <strong>multilingual political datasets</strong>
+            (English, Bangla, Banglish), including <strong>real and synthetic data</strong>.
+            Addressed challenges such as <strong>data inconsistency</strong>,
+            <strong>code-mixed text processing</strong>, and <strong>redundant summaries</strong>.
+            Developed a <strong>preprocessing pipeline</strong> for cleaning, normalization, and tokenization,
+            followed by <strong class="highlight">WGSS-based clustering</strong> for redundancy reduction
+            and the use of <strong class="highlight">Transformer models</strong> to generate accurate and fluent summaries.
+          </p>
+
+          <a href="https://drive.google.com/drive/folders/1XHzAHeOCsxoaO6DuGa_v2pmUznXUqimR" target="_blank"
+            class="research-link">
+            📄 View Project Files
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- See More -->
+    <div class="see-more-container">
+      <button id="seeMoreBtn">Show More</button>
+    </div>
+  </section>
+
+  <!-- =========================
+     Certificates & Awards
+     ========================= -->
+  <section id="certifications-awards" class="certifications-section">
+
+    <h2><i class="fas fa-award"></i> Certificates & Awards</h2>
+
+    <p class="section-subtitle">
+      A collection of my certificates, participation documents, and awards.
+    </p>
+
+    <div class="cert-scroll-wrapper">
+
+      <button class="scroll-btn left-btn">&#10094;</button>
+      <div class="cert-awards-container">
+        <div class="cert-awards-scroll">
+
+          <!-- CARD -->
+          <div class="cert-award-card">
+            <div class="pdf-thumb">
+              <img src="certificates/industrial_training.jpg" alt="Industrial Training Certificate"
+                class="certificate-img">
+            </div>
+            <p>
+              Industrial Training – IT Business Incubator, CUET
+              (in collaboration with Diligite Ltd.)
+            </p>
+          </div>
+
+          <!-- CARD -->
+          <div class="cert-award-card">
+            <div class="pdf-thumb">
+              <img src="certificates/ras.jpg" alt="IEEE Robotics & Automation Society" class="certificate-img">
+            </div>
+            <p>
+              IEEE Robotics & Automation Society IIUC Student Branch Chapter 2024 – 2025
+            </p>
+          </div>
+
+          <!-- CARD -->
+          <div class="cert-award-card">
+            <div class="pdf-thumb">
+              <img src="images/f.jpeg" alt="Farewell Crest Award" class="certificate-img">
+            </div>
+
+            <p>
+              Farewell Award from IIUC Computer Club,
+              Department of CSE, IIUC (2025)
+            </p>
+          </div>
+
+          <!-- CARD -->
+          <div class="cert-award-card">
+            <div class="pdf-thumb">
+              <img src="certificates/kuet_1.jpg" alt="IGNITION 2023" class="certificate-img">
+            </div>
+            <p>
+              IGNITION 2023 – Line Follower Robot (KUET)
+            </p>
+          </div>
+
+          <!-- CARD -->
+          <div class="cert-award-card">
+            <div class="pdf-thumb">
+              <img src="certificates/iubat_1.jpg" alt="TechnoCrats Competition" class="certificate-img">
+            </div>
+            <p>
+              TechnoCrats V.2 National Innovation Competition 2024 – SoccerBot
+            </p>
+          </div>
+
+          <!-- CARD -->
+          <div class="cert-award-card">
+            <div class="pdf-thumb">
+              <img src="certificates/hult.jpg" alt="Hult Prize" class="certificate-img">
+            </div>
+            <p>
+              Hult Prize IIUC 2023 – 2024
+            </p>
+          </div>
+
+          <!-- CARD -->
+          <div class="cert-award-card">
+            <div class="pdf-thumb">
+              <img src="certificates/a1.jpg" alt="Associate of IT Department" class="certificate-img">
+            </div>
+            <p>
+              Award as Associate of the IT Department at Hult Prize IIUC 2023 – 2024
+            </p>
+          </div>
+
+          <!-- CARD -->
+          <div class="cert-award-card">
+            <div class="pdf-thumb">
+              <img src="certificates/cs.jpg" alt="IEEE Computer Society" class="certificate-img">
+            </div>
+            <p>
+              IEEE Computer Society IIUC Student Branch Chapter 2024 – 2025
+            </p>
+          </div>
+
+          <!-- CARD -->
+          <div class="cert-award-card">
+            <div class="pdf-thumb">
+              <img src="certificates/a8.jpg" alt="Newsletter Sub-editor" class="certificate-img">
+            </div>
+            <p>
+              Award as Newsletter Sub-Editor at IEEE Computer Society IIUC Student Branch Chapter 2024 – 2025
+            </p>
+          </div>
+
+          <!-- CARD -->
+          <div class="cert-award-card">
+            <div class="pdf-thumb">
+              <img src="certificates/drone.jpg" alt="Avian Aces" class="certificate-img">
+            </div>
+            <p>
+              Avian Aces 2023 – IEEE Robotics & Automation Society IIUC SBC
+            </p>
+          </div>
+
+          <!-- CARD -->
+          <div class="cert-award-card">
+            <div class="pdf-thumb">
+              <img src="certificates/next big_1.jpg" alt="Next Big Opportunity" class="certificate-img">
+            </div>
+            <p>
+              Next Big Opportunity – IEEE CS IIUC SBC Seminar
+            </p>
+          </div>
+
+          <!-- CARD -->
+          <div class="cert-award-card">
+            <div class="pdf-thumb">
+              <img src="certificates/enbed.jpg" alt="Embedded Systems" class="certificate-img">
+            </div>
+            <p>
+              Unlocking Innovation: Embedded Systems – IEEE IIUC RAS SBC
+            </p>
+          </div>
+
+          <!-- CARD -->
+          <div class="cert-award-card">
+            <div class="pdf-thumb">
+              <img src="certificates/devops.jpg" alt="DevOps Seminar" class="certificate-img">
+            </div>
+            <p>
+              Dev & DevOps: Roadmap for Developers – IEEE IIUC CS SBC
+            </p>
+          </div>
+
+          <!-- CARD -->
+          <div class="cert-award-card">
+            <div class="pdf-thumb">
+              <img src="certificates/robust.jpg" alt="Robust Python APIs" class="certificate-img">
+            </div>
+            <p>
+              Robust Python APIs Workshop – IEEE IIUC SB
+            </p>
+          </div>
+
+          <!-- CARD -->
+          <div class="cert-award-card">
+            <div class="pdf-thumb">
+              <img src="certificates/icrcs23.png" alt="ICRCS 2023" class="certificate-img">
+            </div>
+            <p>
+              International Congress on Recent Trends in Computer Science – 2023
+            </p>
+          </div>
+
+          <!-- CARD -->
+          <div class="cert-award-card">
+            <div class="pdf-thumb">
+              <img src="certificates/icrcs24.jpg" alt="ICRCS 2024" class="certificate-img">
+            </div>
+            <p>
+              International Congress on Recent Trends in Computer Science – 2024
+            </p>
+          </div>
+
+          <!-- CARD -->
+          <div class="cert-award-card">
+            <div class="pdf-thumb">
+              <img src="certificates/divisional.jpg" alt="Science Olympiad" class="certificate-img">
+            </div>
+            <p>
+              BAS-FSIB Divisional Science Olympiad 2024 at International Islamic University Chittagong
+            </p>
+          </div>
+
+          <!-- CARD -->
+          <div class="cert-award-card">
+            <div class="pdf-thumb">
+              <img src="certificates/youthvoice.jpg" alt="Youth Worldwide Foundation" class="certificate-img">
+            </div>
+            <p>
+              Youth WorldWide Foundation – Project Chawna Piyaju 2023
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <button class="scroll-btn right-btn">&#10095;</button>
+
+    </div>
+  </section>
+
+  <!-- =========================
+     IMAGE POPUP MODAL
+  ========================= -->
+  <div id="certificateModal" class="certificate-modal">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" id="modalImage">
+  </div>
+
+  <!-- =========================
+     SPECIAL MOMENTS
+  ========================= -->
+  <section id="moments" class="moments-section">
+
+    <h2><i class="fas fa-camera"></i> SPECIAL MOMENTS</h2>
+
+    <p class="moments-subtitle">
+      Some special memories, events, and unforgettable moments from my journey.
+    </p>
+
+    <div class="moments-scroll-wrapper">
+
+      <button class="moments-scroll-btn moments-left-btn">&#10094;</button>
+
+      <div class="moments-container">
+        <div class="moments-scroll">
+
+          <div class="moment-card">
+            <img src="images/p4.jpeg" alt="Moment 1" class="moment-img">
+          </div>
+
+          <div class="moment-card">
+            <img src="images/p1.jpeg" alt="Moment 2" class="moment-img">
+          </div>
+
+          <div class="moment-card">
+            <img src="images/p2.jpeg" alt="Moment 3" class="moment-img">
+          </div>
+
+          <div class="moment-card">
+            <img src="images/p3.jpeg" alt="Moment 4" class="moment-img">
+          </div>
+
+          <div class="moment-card">
+            <img src="images/a2.jpg" alt="Moment 5" class="moment-img">
+          </div>
+
+          <div class="moment-card">
+            <img src="images/a3.jpg" alt="Moment 6" class="moment-img">
+          </div>
+
+          <div class="moment-card">
+            <div class="moment-img-box video-card">
+              <video class="moment-video">
+                <source src="videos/drone.mp4" type="video/mp4">
+              </video>
+              <button class="play-btn">▶</button>
+            </div>
+            <p class="moment-caption">
+              My Special Event Moment
+            </p>
+          </div>
+
+          <div class="moment-card">
+            <img src="images/a4.jpg" alt="Moment 7" class="moment-img">
+          </div>
+
+          <div class="moment-card">
+            <img src="images/a5.jpg" alt="Moment 8" class="moment-img">
+          </div>
+
+          <div class="moment-card">
+            <img src="images/p5.jpeg" alt="Moment 9" class="moment-img">
+          </div>
+
+          <div class="moment-card">
+            <img src="images/a6.jpg" alt="Moment 10" class="moment-img">
+          </div>
+
+          <div class="moment-card">
+            <img src="images/a7.jpg" alt="Moment 11" class="moment-img">
+          </div>
+
+          <div class="moment-card">
+            <img src="images/a8.jpg" alt="Moment 12" class="moment-img">
+          </div>
+
+          <div class="moment-card">
+            <img src="images/a9.jpg" alt="Moment 13" class="moment-img">
+          </div>
+
+          <div class="moment-card">
+            <img src="images/k.jpeg" alt="Moment 14" class="moment-img">
+          </div>
+
+          <div class="moment-card">
+            <img src="images/a10.jpg" alt="Moment 15" class="moment-img">
+          </div>
+
+          <div class="moment-card">
+            <img src="images/a11.jpg" alt="Moment 16" class="moment-img">
+          </div>
+
+          <div class="moment-card">
+            <img src="images/a12.jpg" alt="Moment 17" class="moment-img">
+          </div>
+
+          <div class="moment-card">
+            <div class="moment-img-box video-card">
+              <video class="moment-video">
+                <source src="videos/arduino.mp4" type="video/mp4">
+              </video>
+              <button class="play-btn">▶</button>
+            </div>
+            <p class="moment-caption">
+              My Special Event Moment
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <button class="moments-scroll-btn moments-right-btn">&#10095;</button>
+
+    </div>
+  </section>
+
+  <!-- POPUP MODAL -->
+  <div id="momentModal" class="certificate-modal">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" id="momentModalImg">
+  </div>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+
+    <h2 class="section-title">
+      CONTACT
+    </h2>
+
+    <p class="contact-subtitle">
+      Let’s get in touch! You can reach me through the following information or send me a direct
+      message using the form.
+    </p>
+
+    <div class="contact-container">
+
+      <!-- Left Side: Contact Info -->
+      <div class="contact-info">
+
+        <div class="info-item">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <h4>Email</h4>
+            <p><a href="mailto:isratjahan6463@gmail.com">isratjahan6463@gmail.com</a></p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <i class="fas fa-phone"></i>
+          <div>
+            <h4>Phone</h4>
+            <p><a href="tel:01610959821">+880 1610-959821</a></p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <div>
+            <h4>Location</h4>
+            <p>Sitakunda, Chattogram, Bangladesh</p>
+
+            <!-- Google Map -->
+            <iframe src="https://www.google.com/maps?q=22.6244069,91.6380029&z=16&output=embed" width="100%"
+              height="220" style="border:0; border-radius:10px; margin-top:10px;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right Side: Contact Form -->
+      <div class="contact-form">
+
+        <form action="https://formspree.io/f/mjglopdd" method="POST">
+
+          <div class="form-group">
+            <input type="text" name="name" placeholder="Your Name" required>
+          </div>
+
+          <div class="form-group">
+            <input type="email" name="email" placeholder="Your Email" required>
+          </div>
+
+          <div class="form-group">
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          </div>
+
+          <button type="submit" class="btn">Send Message</button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Israt Jahan. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
